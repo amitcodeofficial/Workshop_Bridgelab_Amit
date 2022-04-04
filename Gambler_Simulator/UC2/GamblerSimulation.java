@@ -3,6 +3,7 @@ import java.util.Random;
 
 public class GamblerSimulation {
 	
+//	Total Money Won in betting will be stored here (Instance Variable)
 	private int totalmoney;
 
 //	Main Gambling Logic
@@ -14,13 +15,17 @@ public class GamblerSimulation {
 		gamble=random.nextInt(2);
 		
 		if(gamble==1) {
+//			Object Created
 			GamblerSimulation gamblerwon = new GamblerSimulation();
 			System.out.println("Gambler Won");
+//			Checking how much value won
 			gamblerwon.totalmoney=gamblerstartstake+gamblerbet;
 			System.out.println("Total Money Won="+gamblerwon.totalmoney);
 		}else {
+//			Object Created
 			GamblerSimulation gamblerloss = new GamblerSimulation();
 			System.out.println("Gambler Lost");
+//			Checking how much value lost
 			gamblerloss.totalmoney=gamblerstartstake-gamblerbet;
 			System.out.println("Total Money Loss="+gamblerloss.totalmoney);
 		}
