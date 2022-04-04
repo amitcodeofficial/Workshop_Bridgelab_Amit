@@ -7,7 +7,5 @@ public class GamblerSimulation {
 		// Gambler final Stake and Bet Values
 		final int gamblerstartstake=1000;
 		final int gamblerbet=1;
-		
-		gamble();
 	}
 }
